@@ -4,4 +4,4 @@ Lesson 1.10 of Front End Web Development
 
 ## Internal pages
 
-- [single page scroll webpage-complete](https://github.com/iYaw/WebDev/blob/master/index.html)
+- [single page scroll webpage-complete](https://github.com/iYaw/WebDev)
