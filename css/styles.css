@@ -3,26 +3,43 @@
 
 
 body{
-	background-color:lightgrey;
-	padding-top:60px;
-	margin-right: 5%;
-	margin-left:5%;
+	background-color:#acdccb;
+	padding-top:32px;
+	margin-right: 0%;
+	margin-left:0%;
 	max-width: inherit;
-	margin-top: 80px;
+	margin-top: 0px;
 	position: relative;
 }
+
+
+.navbar{
+	height: 55px;
+}
+
+
+
 .navbar ul li a{
 	text-transform: uppercase;
-	color: orange;
+	background-color:black;
 	letter-spacing:0.1em;
 	margin-left: 1px;
 	font-size: 1.2em;
-	font-family:'Raleway', sans-serif; 	
+	font-family:'Raleway', sans-serif;
 
 }
-/* Adding Pseudo- Classs.. */
-#container navbar a:hover{
-	color: lightsalmon;
+
+
+
+/* Logo(Zekhub)-Adding Pseudo- Classs.. */
+.navbar :hover ul a{
+	color:orange;
+	text-decoration: none;
+	transition: color 600ms;
+}
+
+.navbar :hover a{
+	color:orange;
 	text-decoration: none;
 	transition: color 600ms;
 }
@@ -41,11 +58,16 @@ body{
 	text-align: center;
 }
 
-.carousel-caption p{
+
+/*.carousel-caption p{
 font-size:1.4em;
+}*/
+.item p {
+	font-size:1.3em;
 }
-
-
+.item h2{
+	font-size:2em;
+}
 .column{
  background-color: white;
 
@@ -70,12 +92,19 @@ font-size:1.4em;
 
 }
 
+#conzept.row{
+	width: 800px;
+  padding-right: 40px;
+}
+#conzept p{
+  font-size:1.15em;
+	text-align: left;
+}
 
 .cpage h2{
 	margin-bottom: 20px;
 	font-size: 1.5em;
 	text-align: center;
-
 }
 
 
@@ -143,7 +172,7 @@ font-size:1.4em;
 		padding-bottom:200px;
 		text-align: center;
 	}
-		 
+
 
 	/*** Styling FAQs  ***/
 
@@ -161,7 +190,7 @@ font-size:1.4em;
 	color:orange;
 	text-decoration: none;
 	transition: color 600ms;
-	-webkit-transition: color 600ms;	
+	-webkit-transition: color 600ms;
 }
 
 .panel-body{
@@ -174,46 +203,103 @@ font-size:1.4em;
 /*** Media Querry ***/
 .container-fluid {
     padding-right: 15px;
-    padding-left: 25px;
+    padding-left: 40px;
     margin-right: auto;
     margin-left: auto;
     font-size: 1em;
-    padding-top: 0px;
-    margin-top: 20px;
+    margin-top: 3px;
     padding-bottom: 40px;
+		padding-top: 60S
     background-color: #adcec2;
 }
-.container-fluid h2,h3{
+.container-fluid h2{
 	text-align: center;
-    
+	font-size: 2.5em;
+	font-family: 'Josefin Sans' , sans-serif;
+	font-weight: bolder;
+}
+
+	.container-fluid h3{
+		text-align: center;
+		font-size: 2em;
+}
+#mitro{
+	background-color: rgba(0, 0, 0, 0.05);
 }
 
 /**** About ****/
 #about .row{
-	background-color: #f1ffcc;
+	background-color: #efe4ad;
 	padding-bottom: 30px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 100px;
+	/*padding-left: 30px;
+	padding-right: 30px;*/
+	padding-top: 20px;
 	text-align: center;
 }
 
 #about h4{
-font-family: 'Josefin Sans', sans-serif; 
+font-family: 'Josefin Sans', sans-serif;
 font-size: 2em;
 }
 
 
+#about{
+	padding-bottom: 80px;
+}
+
+
+/**** My Work ****/
+#work h3, p{
+	font-size:1.2em;
+}
+#work a{
+	font-size:1em;
+	font-style: oblique;
+	font-family: fantasy;
+	font-weight: bolder;
+	color:#663333;
+}
+#iwork:hover a{
+	color:blue;
+	font-size: 2.5vw;
+	text-decoration: none;
+	transition: color 600ms;
+}
+
+
+#work .row{
+	background-color:#efe4ad;
+}
+
+#iwork{
+	padding-bottom: 40px;
+padding-top: 20px;
+}
+
+#iwork .img-responsive{
+	padding: 5px;
+}
+#worktext{
+	padding-left: 0px;
+}
+
+#iwork p{
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.5em;
+}
+
 /**** Contact ****/
 
 #contact{
-	background-image:url(http://yaw10.bitballoon.com//img/mb.jpg);
+	/*background-image:url(http://yaw10.bitballoon.com/img/mq5.jpg);*/
+	background-image:url(file:///Users/zeke/Documents/WebDev/img/mq5.jpg);
 	background-attachment: fixed;
 	background-size:cover;
-	color: black;
+	color: white;
 	padding:50px;
-	padding-bottom: 120px;
-	padding-top: 50px
+	padding-bottom: 20px;
+	padding-top: 0px
 	height:400px;
 }
 
@@ -222,16 +308,22 @@ font-size: 2em;
 	font-family:'Josefin Sans', sans-serif;
 	padding-left: 10px;
 	padding-right:10px;
-	color:red;	
+	color:orange;
 }
 #contact p{
 	font-size: 1.5em;
-	font-family:'Josefin Sans', sans-serif;  
+	font-family:'Josefin Sans', sans-serif;
+}
+#contact h2{
+	color: white;
+}
+#contact h3{
+	font-size:1.5em;
 }
 
 #contact .glyphicon:hover{
-	font-size: 2.0em;
-	color:darkorange;
+	font-size: 2em;
+	color:lightgreen;
 }
 
 #contact .glyphicon{
@@ -239,9 +331,12 @@ font-size: 2em;
 
 }
 
-
 /**** FAQs ****/
-
+#faqs{
+	padding-bottom: 40px;
+	padding-right: 120px;
+	padding-left: 120px;
+}
 glyphicon:hover{
 	color:darkorange;
 	text-decoration: none;
@@ -249,7 +344,7 @@ glyphicon:hover{
 	-webkit-transition: color 600ms;
 }
 
-	.glyphicon{
+	#faqs.glyphicon{
 	font-size: 1.5em;
 	color:grey;
 }
@@ -257,31 +352,57 @@ glyphicon:hover{
 #process.row{
 	padding-left: 20px;
 	padding-right: 50px;
+	margin-top: 15px;
+  padding-top: 20px;
+}
+#process{
+	padding-left: 20px;
+	padding-right: 50px;
+	margin-top: 35px;
+  padding-top: 25px;
 }
 
 /**** More Infopage ****/
 
+#MoreInfo{
+	padding-bottom: 40px;
+}
+
 #info .row{
-	background-color: #f1ffcc;
+	background-color: ##efe4ad;
 	padding-bottom: 20px;
+}
+#info{
+	background-color: #efe4ad;
+	color: black;
+	padding-bottom: 25px;
 }
 
 #info li{
 	padding-bottom: 20px;
 	font-size:3em
-	padding-top:5px;	
+	padding-top:5px;
 }
+#info h3{
+	font-size:1.5em;
+}
+
+#info p,li{
+	font-size:1.2em
+}
+
+
 /**** Project Name_ Navigation bar ****/
 
 .projectName{
 	text-transform: uppercase;
 	font-size: 2.5em;
 	font-family: 'Russo One', sans-serif;
-	
+
 }
 
 .projectName a {
-	color: #8e1d01;
+	color:#f1ffcc;
 }
 
 /**** Anchor to Display full section Name under navbar  ****/
@@ -290,37 +411,12 @@ glyphicon:hover{
   padding-top: 55px;
 }
 
-#info{
-	background-color: #f1ffcc;
-	color:black;
+
+
+
+/*.... Styling the footer....*/
+.footer{
+	padding: 20px;
+	align-content: center;
+	color:darkred;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
